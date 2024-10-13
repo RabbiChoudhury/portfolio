@@ -1,0 +1,681 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  background-color: rgb(15, 22, 36);
+}
+/*-----------NavBar Section----------*/
+nav {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  background: rgba(255, 243, 243, 0.034);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  top: 0;
+  position: sticky;
+  z-index: 11;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.logo-png {
+  width: 3rem;
+  height: 2.8rem;
+}
+.name {
+  font-size: 2vw;
+  font-weight: 700;
+  padding: 0 1vw;
+}
+.nav-right {
+  width: 60%;
+  margin-left: 20vw;
+}
+.nav-right .link {
+  padding: 0 1vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+.nav-right .link:hover {
+  color: red;
+}
+/*----------- Mobile/responsive NavBar Section----------*/
+/* .nav-right-mobile {
+  position: relative;
+  width: 80%;
+  height: 50vh;
+  padding-top: 2rem;
+  background: rgba(211, 195, 195, 0.048);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom-right-radius: 40%;
+  z-index: 4;
+  left: -350px;
+  display: block;
+}
+
+.mobile-menu-link .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.mobile-menu-link a:hover {
+  color: red;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 40px;
+}
+.menu-icon {
+  font-size: 40px;
+  display: none;
+} */
+
+/*-----------about Section----------*/
+#about-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.about-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 10vw;
+  z-index: 1;
+}
+.first {
+  font-size: 2vw;
+}
+.red {
+  font-size: 2vw;
+  color: red;
+}
+.big-name {
+  font-size: 4vw;
+  font-weight: 600;
+}
+.job {
+  font-size: 2vw;
+}
+.about-details {
+  margin-top: 1.5vw;
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.social-link {
+  margin-top: 1vw;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  fill: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 0.8vw;
+}
+.achivment {
+  display: flex;
+  gap: 2vw;
+}
+.count {
+  font-size: 3vw;
+}
+.title {
+  font-size: 0.8vw;
+}
+
+.about-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.profile-pic img {
+  width: 50%;
+  border: 5px solid rgb(33, 191, 202);
+  border-radius: 50%;
+  box-shadow: 2px 4px 10px violet;
+}
+
+/*-----------education Section----------*/
+#education-section {
+  width: 100%;
+  height: 100vh;
+}
+.education-card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 24%;
+  height: 70%;
+  background: rgba(92, 82, 82, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 3vw;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.card-top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.institute-logo {
+  background-color: #fff;
+  border-radius: 5%;
+  width: 70%;
+}
+.card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .name-of-degree {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.card .name-of-institute {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.card .subject {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.card .year {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.card .result {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.card span {
+  color: red;
+}
+sup {
+  color: rgb(255, 255, 255);
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+/*-----------skills Section----------*/
+#skills-section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+.skill-title {
+  font-size: 1.5vw;
+  padding-left: 2rem;
+}
+.programing {
+  width: 50%;
+  height: 50vh;
+}
+.skills {
+  display: flex;
+  margin: 1rem 2rem;
+  gap: 2rem;
+}
+.skill-logo {
+  width: 8%;
+  height: 8%;
+}
+.level {
+  width: 60%;
+  height: 1rem;
+  border-radius: 5px;
+  position: relative;
+  top: 1vw;
+}
+.status {
+  width: 4.5rem;
+  height: 1.5rem;
+  background-color: red;
+  padding: 3px 4px;
+  position: relative;
+  top: 0.5vw;
+  border-radius: 5px;
+}
+.html {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 0%,
+    hsl(118, 72%, 52%) 0%
+  );
+}
+.css {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 0%,
+    hsl(118, 72%, 52%) 0%
+  );
+}
+
+.js {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 70%,
+    hsl(118, 72%, 52%) 90%
+  );
+}
+.tailwind {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 30%,
+    hsl(118, 72%, 52%) 40%
+  );
+}
+.bootstrap {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 30%,
+    hsl(118, 72%, 52%) 40%
+  );
+}
+.additional {
+  width: 50%;
+  height: 50vh;
+}
+.git {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 30%,
+    hsl(118, 72%, 52%) 40%
+  );
+}
+.ps {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 30%,
+    hsl(118, 72%, 52%) 40%
+  );
+}
+.figma {
+  background: linear-gradient(
+    to left,
+    rgb(160, 156, 156) 30%,
+    hsl(118, 72%, 52%) 40%
+  );
+}
+
+/*-----------porfolio Section----------*/
+#portfolio-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-title {
+  font-size: 3vw;
+}
+.portfolio-sample {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.sample {
+  width: 32.8%;
+  height: 50%;
+  position: relative;
+}
+.p-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------contact Section----------*/
+#contact-section {
+  width: 100%;
+  height: 100vh;
+}
+.contact-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.address-container {
+  width: 80%;
+  height: 30%;
+  border-image: linear-gradient(to right, #e23105 0%, #ffffff 100%) 1;
+  border-width: 4px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-name {
+  font-size: 2vw;
+  color: red;
+  padding-right: 2rem;
+}
+.address {
+  font-size: 1.1vw;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.contact-form {
+  width: 60%;
+  height: 100%;
+}
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.contactform {
+  width: 50%;
+  height: 3rem;
+  border-image: linear-gradient(to right, #e23105 0%, #ffffff 100%) 1;
+  border-width: 4px;
+  border-style: solid;
+  background-color: transparent;
+}
+.send {
+  width: 6.5rem;
+  height: 2rem;
+  border-image: linear-gradient(to right, #e23105 0%, #ffffff 100%) 1;
+  border-width: 4px;
+  border-style: solid;
+  color: red;
+  background-color: transparent;
+}
+.send:hover {
+  background-color: #494949;
+}
+.social-contact {
+  width: 100%;
+  height: 10%;
+}
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.address-social-icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  border-image: linear-gradient(to right, #e23105 0%, #ffffff 100%) 1;
+  border-width: 4px;
+  border-style: solid;
+  padding: 5px;
+}
+
+@media (max-width: 640px) {
+  .nav-left {
+    width: 50%;
+  }
+  .name {
+    font-size: 1.08rem;
+  }
+  .nav-right {
+    width: 80%;
+  }
+  .nav-right .link {
+    font-size: 0.7rem;
+  }
+  .nav-right .link:active {
+    color: red;
+  }
+  .nav-right-mobile {
+    display: none;
+  }
+  /* .menu-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+  } */
+  .nav-right-mobile {
+    left: 0;
+    transition: all 3s;
+  }
+  /* -----Responsive About Section----- */
+  #about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-left {
+    width: 80%;
+    position: relative;
+    top: -3rem;
+  }
+  .first {
+    font-size: 1.2rem;
+  }
+  .red {
+    font-size: 1.2rem;
+  }
+  .big-name {
+    font-size: 2rem;
+  }
+  .job {
+    font-size: 1.2rem;
+  }
+  .about-details {
+    font-size: 0.9rem;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .count {
+    font-size: 1.5rem;
+  }
+  .span {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 0.5rem;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+  /* -----Responsive Education Section----- */
+  #education-section {
+    height: 120vh;
+  }
+  .education-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-top {
+    width: 20%;
+  }
+  .card-bottom {
+    width: 80%;
+    height: 100%;
+    line-height: 1.8rem;
+  }
+  .institute-logo {
+    width: 70%;
+    height: 50%;
+  }
+
+  .card .name-of-degree {
+    font-size: 1.5rem;
+  }
+  .card .name-of-institute {
+    font-size: 1rem;
+  }
+  .card .subject {
+    font-size: 0.8rem;
+  }
+  .card .year {
+    font-size: 0.8rem;
+  }
+  .card .result {
+    font-size: 0.8rem;
+  }
+  /* -----Responsive Skill Section----- */
+  #skills-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    top: 5rem;
+  }
+  .programing {
+    width: 100%;
+  }
+  .skill-title {
+    font-size: 1.5rem;
+  }
+  .additional {
+    position: relative;
+    width: 100%;
+  }
+  /* -----Responsive Portfolio Section----- */
+  #portfolio-section {
+    height: 250vh;
+    /* position: relative;
+    top: -30rem; */
+  }
+  .portfolio-title {
+    font-size: 1.5rem;
+  }
+  .portfolio-sample {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding-left: 8rem;
+  }
+  .sample {
+    width: 60%;
+    height: 60%;
+  }
+  .p-img {
+    width: 100%;
+  }
+
+  /* -----Responsive Contact Section----- */
+
+  .contact-container {
+    width: 100%;
+    flex: none;
+  }
+  .address-container {
+    width: 80%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .contact {
+    width: 50%;
+  }
+  .address-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+  .address {
+    font-size: 1rem;
+  }
+
+  .contactform {
+    width: 80%;
+  }
+  .address-social-icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    border-image: linear-gradient(to right, #e23105 0%, #ffffff 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+  }
+}
